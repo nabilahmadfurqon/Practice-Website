@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Food, LLC - Our Menu</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap 3.3.7 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+
+  <!-- Our own CSS (external file, no inline styles) -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ========== NAVBAR ========== -->
+  <!-- navbar-default (not navbar-fixed-top) so it scrolls away with the page -->
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+
+      <div class="navbar-header">
+        <!-- Mobile menu button (3 horizontal bars). Only visible on xs via Bootstrap's built-in CSS -->
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mainNavbarCollapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Food, LLC</a>
+      </div>
+
+      <!-- Collapsible menu: items only ever shown in mobile (xs) view -->
+      <div class="collapse navbar-collapse" id="mainNavbarCollapse">
+        <ul class="nav navbar-nav visible-xs">
+          <li><a href="#chicken-section">Chicken</a></li>
+          <li><a href="#beef-section">Beef</a></li>
+          <li><a href="#sushi-section">Sushi</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+
+  <!-- ========== PAGE HEADING ========== -->
+  <h1 id="our-menu" class="text-center page-heading">Our Menu</h1>
+
+  <!--
+    ========== OPTIONAL SECTION ==========
+    Three menu sections in a single Bootstrap row:
+      xs (mobile):  12 / 12 / 12  -> each section takes the full row, stacked
+      sm (tablet):   6 /  6 / 12  -> Chicken + Beef share row 1, Sushi wraps to row 2 full width
+      md (desktop):  4 /  4 /  4  -> all three share one row, equal width
+  -->
+  <div class="container-fluid">
+    <div class="row">
+
+      <div id="chicken-section" class="col-xs-12 col-sm-6 col-md-4 menu-section section-chicken">
+        <h3 class="text-center">Chicken</h3>
+        <p>Our chicken dishes are grilled and seasoned fresh daily, served with your choice of two sides.
+          From classic roasted chicken to spicy grilled wings, there's something here for every craving.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut
+          labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+        <p class="back-to-top"><a href="#our-menu">Back to Top</a></p>
+      </div>
+
+      <div id="beef-section" class="col-xs-12 col-sm-6 col-md-4 menu-section section-beef">
+        <h3 class="text-center">Beef</h3>
+        <p>Hand-cut steaks and slow-braised beef, prepared to order. Pair it with our house sauce or keep
+          it simple with just salt, pepper, and a good sear.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut
+          labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+        <p class="back-to-top"><a href="#our-menu">Back to Top</a></p>
+      </div>
+
+      <div id="sushi-section" class="col-xs-12 col-sm-12 col-md-4 menu-section section-sushi">
+        <h3 class="text-center">Sushi</h3>
+        <p>Fresh, hand-rolled sushi made daily by our in-house chefs, from classic nigiri to specialty
+          rolls with a modern twist.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut
+          labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+        <p class="back-to-top"><a href="#our-menu">Back to Top</a></p>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- jQuery and Bootstrap JS (needed for the navbar collapse toggle) -->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>
